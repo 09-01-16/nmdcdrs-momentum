@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Momenum App</title>
+</head>
+<body>
+  <form id="login" class="hidden">
+      <input
+      type="text" 
+      placeholder="Enter your username!"
+      required
+      maxlength="15">
+      <button>Log in</button>
+  </form>
+  <div id="github" class="hidden">
+    <a href="https://www.github.com/gomteeng"><img id='pfp' src="https://avatars.githubusercontent.com/u/111836039?v=4"></a>
+  </div>
+  <div id="greeting-clock" class="hidden">
+    <h1 class="hidden" id="greeting"></h1>
+    <h2 id="clock"></h2>
+  </div>
+  <div id="todo" class="hidden">
+    <form id="todo-form">
+      <input id='todo-input' type="text" placeholder="Add a to do" required>
+    </form>
+    <ul id="todo-list">
+      
+    </ul>
+  </div>
+  <div id="quote" class="hidden">
+    <span></span>
+    <br>
+    <b><span></span></b>
+  </div>
+  <div id="weather" class="hidden">
+    <span></span><br>
+    <span></span>
+  </div>
+  <script src="src/login.js"></script>
+  <script src="src/clock.js"></script>
+  <script src="src/quotes.js"></script>
+  <script src="src/background.js"></script>
+  <script src="src/todo.js"></script>
+  <script src="src/weather.js"></script>
+</body>
+</html>
